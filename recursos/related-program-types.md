@@ -1,3 +1,7 @@
+---
+title: "Tipos de relación entre programas"
+---
+
 # Tipos de relación entre programas
 
 Tipos utilizados para relacionar programas entre sí.

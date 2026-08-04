@@ -1,3 +1,7 @@
+---
+title: "Canales"
+---
+
 # Canales
 
 Señales o canales incluidos en el proceso.

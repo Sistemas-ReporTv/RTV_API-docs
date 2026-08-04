@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'es' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Ir al inicio">
+        <span class="brand-mark">RTV</span>
+        <span>
+          <strong>RTV API</strong>
+          <small>Documentación técnica</small>
+        </span>
+      </a>
+      <a class="github-link" href="https://github.com/{{ site.repository }}">Ver en GitHub</a>
+    </header>
+
+    <details class="mobile-nav">
+      <summary>Explorar documentación</summary>
+      {% include sidebar.html %}
+    </details>
+
+    <div class="site-shell">
+      <aside class="sidebar" aria-label="Navegación principal">
+        {% include sidebar.html %}
+      </aside>
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <span>RTV API</span>
+      <a href="https://github.com/{{ site.repository }}">Código fuente y cambios</a>
+    </footer>
+  </body>
+</html>

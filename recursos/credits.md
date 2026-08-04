@@ -1,3 +1,7 @@
+---
+title: "Créditos"
+---
+
 # Créditos
 
 Personas y créditos artísticos referenciados por el contenido.

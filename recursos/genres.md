@@ -1,3 +1,7 @@
+---
+title: "Géneros"
+---
+
 # Géneros
 
 Géneros utilizados para clasificar el contenido.

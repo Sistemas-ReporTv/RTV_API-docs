@@ -1,3 +1,7 @@
+---
+title: "Relaciones entre categorías y géneros"
+---
+
 # Relaciones entre categorías y géneros
 
 Asociaciones válidas entre categorías y géneros.

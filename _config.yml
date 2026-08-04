@@ -1,0 +1,34 @@
+title: RTV API
+description: Documentación para integrar y consultar los recursos de RTV API.
+lang: es-AR
+url: "https://sistemas-reportv.github.io"
+baseurl: "/RTV_API-docs"
+repository: Sistemas-ReporTv/RTV_API-docs
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+relative_links:
+  enabled: true
+  collections: true
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - DESARROLLO.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

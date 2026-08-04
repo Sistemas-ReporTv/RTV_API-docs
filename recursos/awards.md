@@ -1,3 +1,7 @@
+---
+title: "Premios"
+---
+
 # Premios
 
 Catálogo de premios disponible.

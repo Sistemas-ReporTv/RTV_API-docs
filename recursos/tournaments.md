@@ -1,3 +1,7 @@
+---
+title: "Torneos"
+---
+
 # Torneos
 
 Torneos y competencias deportivas disponibles.

@@ -1,3 +1,7 @@
+---
+title: "Categorías"
+---
+
 # Categorías
 
 Categorías utilizadas para clasificar el contenido.

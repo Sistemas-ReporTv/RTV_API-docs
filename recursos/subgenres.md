@@ -1,3 +1,7 @@
+---
+title: "Subgéneros"
+---
+
 # Subgéneros
 
 Subgéneros utilizados para clasificar el contenido.

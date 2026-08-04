@@ -1,3 +1,7 @@
+---
+title: "Estadios"
+---
+
 # Estadios
 
 Estadios y sedes deportivas disponibles.

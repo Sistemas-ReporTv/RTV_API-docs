@@ -1,3 +1,8 @@
+---
+title: "Inicio"
+permalink: /
+---
+
 # Documentación de RTV API
 
 RTV API permite consultar la última actualización disponible de los datos de

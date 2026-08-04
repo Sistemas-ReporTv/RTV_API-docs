@@ -1,3 +1,7 @@
+---
+title: "Equipos"
+---
+
 # Equipos
 
 Equipos deportivos disponibles para el proceso.

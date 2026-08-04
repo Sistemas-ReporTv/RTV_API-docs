@@ -1,3 +1,7 @@
+---
+title: "Relaciones entre géneros y subgéneros"
+---
+
 # Relaciones entre géneros y subgéneros
 
 Asociaciones válidas entre géneros y subgéneros.

@@ -1,3 +1,7 @@
+---
+title: "Categorías de canales"
+---
+
 # Categorías de canales
 
 Categorías utilizadas para clasificar señales.
