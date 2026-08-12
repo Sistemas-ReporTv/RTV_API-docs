@@ -1,5 +1,8 @@
 ---
 title: "Clientes"
+description: "Clientes habilitados en el feed."
+lang: es
+translation_path: "recursos/clients.html"
 ---
 
 # Clientes

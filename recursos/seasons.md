@@ -1,5 +1,8 @@
 ---
 title: "Temporadas"
+description: "Temporadas asociadas a los programas."
+lang: es
+translation_path: "recursos/seasons.html"
 ---
 
 # Temporadas

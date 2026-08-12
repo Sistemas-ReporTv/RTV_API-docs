@@ -1,5 +1,8 @@
 ---
 title: "Países"
+description: "Países referenciados por los demás recursos."
+lang: es
+translation_path: "recursos/countries.html"
 ---
 
 # Países

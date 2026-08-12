@@ -1,5 +1,8 @@
 ---
 title: "RTV API — Guía para clientes"
+description: "La API permite consultar la última versión disponible de cada conjunto de datos RTV. Reemplazá `{processId}` por el identificador de proceso asignado a tu integración."
+lang: es
+translation_path: "API_CLIENTES.html"
 ---
 
 # RTV API — Guía para clientes

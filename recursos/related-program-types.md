@@ -1,5 +1,8 @@
 ---
 title: "Tipos de relación entre programas"
+description: "Tipos utilizados para relacionar programas entre sí."
+lang: es
+translation_path: "recursos/related-program-types.html"
 ---
 
 # Tipos de relación entre programas

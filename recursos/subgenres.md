@@ -1,5 +1,8 @@
 ---
 title: "Subgéneros"
+description: "Subgéneros utilizados para clasificar el contenido."
+lang: es
+translation_path: "recursos/subgenres.html"
 ---
 
 # Subgéneros

@@ -1,5 +1,8 @@
 ---
 title: "Géneros"
+description: "Géneros utilizados para clasificar el contenido."
+lang: es
+translation_path: "recursos/genres.html"
 ---
 
 # Géneros

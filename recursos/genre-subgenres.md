@@ -1,5 +1,8 @@
 ---
 title: "Relaciones entre géneros y subgéneros"
+description: "Asociaciones válidas entre géneros y subgéneros."
+lang: es
+translation_path: "recursos/genre-subgenres.html"
 ---
 
 # Relaciones entre géneros y subgéneros

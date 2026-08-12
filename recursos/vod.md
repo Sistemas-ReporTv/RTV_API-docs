@@ -1,5 +1,8 @@
 ---
 title: "Contenido VOD"
+description: "Disponibilidad de contenidos bajo demanda."
+lang: es
+translation_path: "recursos/vod.html"
 ---
 
 # Contenido VOD

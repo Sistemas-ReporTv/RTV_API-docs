@@ -1,5 +1,8 @@
 ---
 title: "Estadios"
+description: "Estadios y sedes deportivas disponibles."
+lang: es
+translation_path: "recursos/stadiums.html"
 ---
 
 # Estadios

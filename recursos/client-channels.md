@@ -1,5 +1,8 @@
 ---
 title: "Canales por cliente"
+description: "Canales asociados a cada cliente."
+lang: es
+translation_path: "recursos/client-channels.html"
 ---
 
 # Canales por cliente

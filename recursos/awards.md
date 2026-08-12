@@ -1,5 +1,8 @@
 ---
 title: "Premios"
+description: "Catálogo de premios disponible."
+lang: es
+translation_path: "recursos/awards.html"
 ---
 
 # Premios

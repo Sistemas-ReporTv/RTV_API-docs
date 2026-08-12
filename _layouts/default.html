@@ -1,30 +1,47 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'es' }}">
+{% assign current_lang = page.lang | default: 'es' %}
+{% assign i18n = site.data.i18n[current_lang] %}
+{% assign translation_path = page.translation_path | default: '' %}
+<html lang="{{ current_lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
+    {% assign es_path = '/' | append: translation_path %}
+    {% assign en_translation_path = translation_path | replace_first: 'recursos/', 'resources/' %}
+    <link rel="alternate" hreflang="es" href="{{ es_path | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ '/en/' | append: en_translation_path | absolute_url }}">
+    <link rel="alternate" hreflang="pt" href="{{ '/pt/' | append: translation_path | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ es_path | absolute_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Ir al inicio">
+      {% if current_lang == 'es' %}
+        {% assign home_path = '/' %}
+      {% else %}
+        {% assign home_path = '/' | append: current_lang | append: '/' %}
+      {% endif %}
+      <a class="brand" href="{{ home_path | relative_url }}" aria-label="{{ i18n.home_aria }}">
         <span class="brand-mark">RTV</span>
         <span>
           <strong>RTV API</strong>
-          <small>Documentación técnica</small>
+          <small>{{ i18n.technical_docs }}</small>
         </span>
       </a>
-      <a class="github-link" href="https://github.com/{{ site.repository }}">Ver en GitHub</a>
+      <div class="header-actions">
+        {% include language-switcher.html %}
+        <a class="github-link" href="https://github.com/{{ site.repository }}">{{ i18n.github }}</a>
+      </div>
     </header>
 
     <details class="mobile-nav">
-      <summary>Explorar documentación</summary>
+      <summary>{{ i18n.explore }}</summary>
       {% include sidebar.html %}
     </details>
 
     <div class="site-shell">
-      <aside class="sidebar" aria-label="Navegación principal">
+      <aside class="sidebar" aria-label="{{ i18n.main_navigation }}">
         {% include sidebar.html %}
       </aside>
       <main class="content">
@@ -34,7 +51,7 @@
 
     <footer class="site-footer">
       <span>RTV API</span>
-      <a href="https://github.com/{{ site.repository }}">Código fuente y cambios</a>
+      <a href="https://github.com/{{ site.repository }}">{{ i18n.source }}</a>
     </footer>
   </body>
 </html>

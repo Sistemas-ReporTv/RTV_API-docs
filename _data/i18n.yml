@@ -1,0 +1,105 @@
+es:
+  home_aria: Ir al inicio
+  technical_docs: Documentación técnica
+  github: Ver en GitHub
+  explore: Explorar documentación
+  main_navigation: Navegación principal
+  source: Código fuente y cambios
+  language: Idioma
+  home: Inicio
+  client_guide: Guía para clientes
+  content: Contenidos
+  programs: Programas
+  episodes: Episodios
+  seasons: Temporadas
+  schedule: Programación
+  vod: Video bajo demanda
+  credits: Créditos
+  awards: Premios
+  relationship_types: Tipos de relación
+  classification: Clasificación
+  categories: Categorías
+  genres: Géneros
+  subgenres: Subgéneros
+  category_genres: Categorías y géneros
+  genre_subgenres: Géneros y subgéneros
+  countries: Países
+  channels_clients: Canales y clientes
+  channels: Canales
+  channel_categories: Categorías de canales
+  clients: Clientes
+  client_channels: Canales por cliente
+  sports: Deportes
+  teams: Equipos
+  tournaments: Torneos
+  stadiums: Estadios
+en:
+  home_aria: Go to home page
+  technical_docs: Technical documentation
+  github: View on GitHub
+  explore: Explore documentation
+  main_navigation: Main navigation
+  source: Source code and changes
+  language: Language
+  home: Home
+  client_guide: Client guide
+  content: Content
+  programs: Programs
+  episodes: Episodes
+  seasons: Seasons
+  schedule: Schedule
+  vod: Video on demand
+  credits: Credits
+  awards: Awards
+  relationship_types: Relationship types
+  classification: Classification
+  categories: Categories
+  genres: Genres
+  subgenres: Subgenres
+  category_genres: Categories and genres
+  genre_subgenres: Genres and subgenres
+  countries: Countries
+  channels_clients: Channels and clients
+  channels: Channels
+  channel_categories: Channel categories
+  clients: Clients
+  client_channels: Channels by client
+  sports: Sports
+  teams: Teams
+  tournaments: Tournaments
+  stadiums: Stadiums
+pt:
+  home_aria: Ir para o início
+  technical_docs: Documentação técnica
+  github: Ver no GitHub
+  explore: Explorar documentação
+  main_navigation: Navegação principal
+  source: Código-fonte e alterações
+  language: Idioma
+  home: Início
+  client_guide: Guia para clientes
+  content: Conteúdos
+  programs: Programas
+  episodes: Episódios
+  seasons: Temporadas
+  schedule: Programação
+  vod: Vídeo sob demanda
+  credits: Créditos
+  awards: Prêmios
+  relationship_types: Tipos de relação
+  classification: Classificação
+  categories: Categorias
+  genres: Gêneros
+  subgenres: Subgêneros
+  category_genres: Categorias e gêneros
+  genre_subgenres: Gêneros e subgêneros
+  countries: Países
+  channels_clients: Canais e clientes
+  channels: Canais
+  channel_categories: Categorias de canais
+  clients: Clientes
+  client_channels: Canais por cliente
+  sports: Esportes
+  teams: Equipes
+  tournaments: Torneios
+  stadiums: Estádios
