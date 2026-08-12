@@ -1,10 +1,8 @@
 es:
   home_aria: Ir al inicio
   technical_docs: Documentación técnica
-  github: Ver en GitHub
   explore: Explorar documentación
   main_navigation: Navegación principal
-  source: Código fuente y cambios
   language: Idioma
   home: Inicio
   client_guide: Guía para clientes
@@ -36,10 +34,8 @@ es:
 en:
   home_aria: Go to home page
   technical_docs: Technical documentation
-  github: View on GitHub
   explore: Explore documentation
   main_navigation: Main navigation
-  source: Source code and changes
   language: Language
   home: Home
   client_guide: Client guide
@@ -71,10 +67,8 @@ en:
 pt:
   home_aria: Ir para o início
   technical_docs: Documentação técnica
-  github: Ver no GitHub
   explore: Explorar documentação
   main_navigation: Navegação principal
-  source: Código-fonte e alterações
   language: Idioma
   home: Início
   client_guide: Guia para clientes
