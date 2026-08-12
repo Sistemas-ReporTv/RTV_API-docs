@@ -1,5 +1,8 @@
 ---
 title: "Episodios"
+description: "Episodios o capítulos asociados a los programas."
+lang: es
+translation_path: "recursos/episodes.html"
 ---
 
 # Episodios

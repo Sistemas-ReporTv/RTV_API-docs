@@ -1,5 +1,8 @@
 ---
 title: "Créditos"
+description: "Personas y créditos artísticos referenciados por el contenido."
+lang: es
+translation_path: "recursos/credits.html"
 ---
 
 # Créditos

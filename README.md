@@ -1,6 +1,9 @@
 ---
 title: "Inicio"
+description: "RTV API permite consultar la última actualización disponible de los datos de programación y contenidos RTV. Las respuestas se entregan en formato JSON y se comprimen con GZIP."
 permalink: /
+lang: es
+translation_path: ""
 ---
 
 # Documentación de RTV API

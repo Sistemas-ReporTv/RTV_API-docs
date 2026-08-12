@@ -1,5 +1,8 @@
 ---
 title: "Equipos"
+description: "Equipos deportivos disponibles para el proceso."
+lang: es
+translation_path: "recursos/teams.html"
 ---
 
 # Equipos

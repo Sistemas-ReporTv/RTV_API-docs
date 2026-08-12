@@ -1,0 +1,9 @@
+<nav class="language-switcher" aria-label="{{ i18n.language }}">
+  {% assign es_path = '/' | append: translation_path %}
+  {% assign en_translation_path = translation_path | replace_first: 'recursos/', 'resources/' %}
+  {% assign en_path = '/en/' | append: en_translation_path %}
+  {% assign pt_path = '/pt/' | append: translation_path %}
+  <a href="{{ es_path | relative_url }}" lang="es"{% if current_lang == 'es' %} aria-current="page"{% endif %}>ES</a>
+  <a href="{{ en_path | relative_url }}" lang="en"{% if current_lang == 'en' %} aria-current="page"{% endif %}>EN</a>
+  <a href="{{ pt_path | relative_url }}" lang="pt"{% if current_lang == 'pt' %} aria-current="page"{% endif %}>PT</a>
+</nav>

@@ -18,4 +18,8 @@ El sitio queda disponible en `http://localhost:4000`.
 3. En **Build and deployment > Source**, seleccionar **GitHub Actions**.
 4. Ejecutar el flujo **Publicar documentación** o hacer un nuevo push a `main`.
 
-La URL prevista es `https://sistemas-reportv.github.io/RTV_API-docs/`.
+Las versiones publicadas quedan disponibles en:
+
+- Español: `https://sistemas-reportv.github.io/RTV_API-docs/`
+- Inglés: `https://sistemas-reportv.github.io/RTV_API-docs/en/`
+- Portugués: `https://sistemas-reportv.github.io/RTV_API-docs/pt/`

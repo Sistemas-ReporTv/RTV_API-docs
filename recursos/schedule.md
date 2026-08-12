@@ -1,5 +1,8 @@
 ---
 title: "Programación"
+description: "Grilla de programación ordenada por canal y fecha de inicio."
+lang: es
+translation_path: "recursos/schedule.html"
 ---
 
 # Programación

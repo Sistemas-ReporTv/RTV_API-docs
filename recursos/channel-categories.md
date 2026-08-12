@@ -1,5 +1,8 @@
 ---
 title: "Categorías de canales"
+description: "Categorías utilizadas para clasificar señales."
+lang: es
+translation_path: "recursos/channel-categories.html"
 ---
 
 # Categorías de canales

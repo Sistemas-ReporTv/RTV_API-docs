@@ -1,5 +1,8 @@
 ---
 title: "Relaciones entre categorías y géneros"
+description: "Asociaciones válidas entre categorías y géneros."
+lang: es
+translation_path: "recursos/category-genres.html"
 ---
 
 # Relaciones entre categorías y géneros

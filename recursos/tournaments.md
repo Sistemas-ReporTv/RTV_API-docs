@@ -1,5 +1,8 @@
 ---
 title: "Torneos"
+description: "Torneos y competencias deportivas disponibles."
+lang: es
+translation_path: "recursos/tournaments.html"
 ---
 
 # Torneos

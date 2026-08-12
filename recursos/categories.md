@@ -1,5 +1,8 @@
 ---
 title: "Categorías"
+description: "Categorías utilizadas para clasificar el contenido."
+lang: es
+translation_path: "recursos/categories.html"
 ---
 
 # Categorías

@@ -1,5 +1,8 @@
 ---
 title: "Programas"
+description: "Programas y sus metadatos editoriales."
+lang: es
+translation_path: "recursos/programs.html"
 ---
 
 # Programas

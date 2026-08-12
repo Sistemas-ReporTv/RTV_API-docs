@@ -1,5 +1,8 @@
 ---
 title: "Canales"
+description: "Señales o canales incluidos en el proceso."
+lang: es
+translation_path: "recursos/channels.html"
 ---
 
 # Canales
