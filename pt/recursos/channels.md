@@ -52,7 +52,7 @@ GET /api/v1/rtv/processes/{processId}/latest/channels
 | `logos` | array | Logotipos disponíveis para o canal. |
 | `logos[].width` | inteiro | Largura da imagem em pixels. |
 | `logos[].height` | inteiro | Altura da imagem em pixels. |
-| `logos[].url` | texto | URL pública da imagem. |
+| `logos[].url` | texto | Referência da imagem conforme a modalidade de entrega acordada; veja [entrega de imagens](../API_CLIENTES.md). |
 
 ## Considerações
 

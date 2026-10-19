@@ -23,3 +23,20 @@ Las versiones publicadas quedan disponibles en:
 - Español: `https://sistemas-reportv.github.io/RTV_API-docs/`
 - Inglés: `https://sistemas-reportv.github.io/RTV_API-docs/en/`
 - Portugués: `https://sistemas-reportv.github.io/RTV_API-docs/pt/`
+
+## Configuración de rendimiento
+
+Para quienes administran la API, la sección `Rtv` permite ajustar la
+concurrencia sin recompilar:
+
+```json
+{
+  "ResourceParallelism": 2,
+  "WorkerParallelism": 4,
+  "CompressionLevel": "Optimal"
+}
+```
+
+- `ResourceParallelism` limita los recursos proyectados y publicados en paralelo por generación.
+- `WorkerParallelism` limita las generaciones simultáneas. Las generaciones del mismo proceso se ejecutan en orden; procesos distintos pueden ejecutarse en paralelo.
+- El producto de ambos valores no puede superar 8. Los valores predeterminados son 2 y 4.

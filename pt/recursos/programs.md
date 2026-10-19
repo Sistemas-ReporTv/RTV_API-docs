@@ -82,6 +82,8 @@ GET /api/v1/rtv/processes/{processId}/latest/programs
 | Campo | Tipo | Descrição |
 |---|---|---|
 | `id` | inteiro | Identificador do programa. |
+| `imdb_id` | texto | Identificador do IMDb, quando habilitado e disponível. |
+| `imdb_rating` | número | Nota do IMDb, maior que 0 e até 10, quando habilitada e disponível. |
 | `sport_event` | booleano | Indica se é um evento esportivo. |
 | `main_title` | texto | Título principal. |
 | `original_title` | texto | Título original. |
@@ -95,7 +97,7 @@ GET /api/v1/rtv/processes/{processId}/latest/programs
 | `images[].width` | inteiro | Largura em pixels. |
 | `images[].height` | inteiro | Altura em pixels. |
 | `images[].primary` | booleano | Indica se é o principal. |
-| `images[].url` | texto | URL pública. |
+| `images[].url` | texto | Referência da imagem conforme a modalidade de entrega acordada; veja [entrega de imagens](../API_CLIENTES.md). |
 | `images[].poster` | booleano | Indica se o formato corresponde a pôster. |
 | `keywords` | array de textos | Palavras-chave associadas. |
 | `related_programs` | array | Programas relacionados. |
@@ -107,6 +109,7 @@ GET /api/v1/rtv/processes/{processId}/latest/programs
 
 ## Considerações
 
+- `imdb_id` e `imdb_rating` são opcionais e podem ser omitidos de forma independente conforme a configuração e os dados disponíveis.
 - `poster` é incluído quando o processo habilita esse atributo.
 - Com idiomas adicionais, são adicionados: `main_title_eng`, `main_title_prt`, `original_title_eng`, `original_title_prt`, `long_argument_prt` e `short_argument_prt`.
 

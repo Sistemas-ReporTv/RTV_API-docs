@@ -64,6 +64,8 @@ GET /api/v1/rtv/processes/{processId}/latest/episodes
 | Field | Type | Description |
 |---|---|---|
 | `id` | integer | Episode identifier. |
+| `imdb_id` | string | IMDb identifier, when enabled and available. |
+| `imdb_rating` | number | IMDb rating, greater than 0 and up to 10, when enabled and available. |
 | `program_id` | integer | Program identifier. |
 | `title` | string | Official title. |
 | `number` | integer | Episode number. |
@@ -79,10 +81,11 @@ GET /api/v1/rtv/processes/{processId}/latest/episodes
 | `images[].width` | integer | Image width in pixels. |
 | `images[].height` | integer | Image height in pixels. |
 | `images[].primary` | boolean | Whether this is the primary image. |
-| `images[].url` | string | Public image URL. |
+| `images[].url` | string | Image reference for the agreed delivery method; see [image delivery](../API_CLIENTES.md). |
 
 ## Considerations
 
+- `imdb_id` and `imdb_rating` are optional and may be omitted independently depending on configuration and available data.
 - When additional languages are enabled, the following fields are added: `title_eng`, `title_prt`, `long_argument_prt` and `short_argument_prt`.
 - For sports events, `sportDetail` is added with `tournament`, `year`, `sport`, `stadium`, `round`, `team1`, `team2`, and `statistics`.
 

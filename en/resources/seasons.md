@@ -57,7 +57,7 @@ GET /api/v1/rtv/processes/{processId}/latest/seasons
 | `images[].width` | integer | Image width in pixels. |
 | `images[].height` | integer | Image height in pixels. |
 | `images[].primary` | boolean | Whether this is the primary image. |
-| `images[].url` | string | Public image URL. |
+| `images[].url` | string | Image reference for the agreed delivery method; see [image delivery](../API_CLIENTES.md). |
 
 ## Considerations
 

@@ -11,6 +11,17 @@ The API lets you retrieve the latest available version of each RTV data set.
 Replace `{processId}` with the process identifier assigned to your
 integration.
 
+## Authentication
+
+All requests require the API token provided for your client. Send the token in
+the `Authorization` header, using the `Bearer` prefix:
+
+```http
+Authorization: Bearer TU_API_TOKEN
+```
+
+The token grants access to your client's processes. Do not include it in the URL.
+
 ## Request
 
 ```http
@@ -24,7 +35,11 @@ generated for a specific date, add the optional `from` parameter:
 GET /api/v1/rtv/processes/123/latest/programs?from=2026-08-03
 ```
 
-The date uses the `YYYY-MM-DD` format.
+### Optional parameter
+
+| Parameter | Format | Behavior |
+|---|---|---|
+| `from` | Date `YYYY-MM-DD` | Selects the latest available update generated for that exact date. If omitted, returns the latest available update for the process. |
 
 ## Available resources
 
@@ -82,12 +97,37 @@ curl example:
 
 ```bash
 curl --compressed \
+  -H "Authorization: Bearer TU_API_TOKEN" \
   "https://api.ejemplo.com/api/v1/rtv/processes/123/latest/programs"
 ```
+
+Replace `TU_API_TOKEN` with the token you received, `123` with your process
+identifier, and `https://api.ejemplo.com` with the base URL provided for your
+integration. `--compressed` receives and decompresses the GZIP response. To
+request a specific date, append `?from=2026-08-03` to the URL.
+
+## Image delivery
+
+Image delivery can be adapted to each integration. Images can remain accessible
+by URL or be uploaded to a client destination via FTP, SFTP, or S3-compatible
+storage. Formats and included images are defined when the process is configured.
+
+Depending on the agreed delivery method, the `url` field of each image or logo can
+contain a public URL, a relative path, a file name, or an identifier.
+It remains a string in all cases.
+
+## Integration options
+
+An integration can include optional attributes such as `poster`, titles and
+synopses in additional languages, credit images, or additional schedule data.
+These are enabled when configuring the process and described in each resource's
+considerations.
 
 ## HTTP statuses
 
 - `200 OK`: resource found.
 - `400 Bad Request`: invalid process, date, or resource.
+- `401 Unauthorized`: the token is missing, expired, revoked, or invalid.
+- `403 Forbidden`: the token does not grant access to the requested process.
 - `404 Not Found`: no update exists for the request yet.
 - `500 Internal Server Error`: unexpected service error.

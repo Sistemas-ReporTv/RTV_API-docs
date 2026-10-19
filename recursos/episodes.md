@@ -64,6 +64,8 @@ GET /api/v1/rtv/processes/{processId}/latest/episodes
 | Campo | Tipo | Descripción |
 |---|---|---|
 | `id` | entero | Identificador del episodio. |
+| `imdb_id` | texto | Identificador de IMDb, cuando está habilitado y disponible. |
+| `imdb_rating` | número | Puntuación de IMDb, mayor que 0 y hasta 10, cuando está habilitada y disponible. |
 | `program_id` | entero | Identificador del programa. |
 | `title` | texto | Título oficial. |
 | `number` | entero | Número de episodio. |
@@ -79,10 +81,11 @@ GET /api/v1/rtv/processes/{processId}/latest/episodes
 | `images[].width` | entero | Ancho de la imagen en píxeles. |
 | `images[].height` | entero | Alto de la imagen en píxeles. |
 | `images[].primary` | booleano | Indica si es la imagen principal. |
-| `images[].url` | texto | URL pública de la imagen. |
+| `images[].url` | texto | Referencia de la imagen según la modalidad de entrega acordada; ver [entrega de imágenes](../API_CLIENTES.md). |
 
 ## Consideraciones
 
+- `imdb_id` e `imdb_rating` son opcionales y pueden omitirse de forma independiente según la configuración y los datos disponibles.
 - Con idiomas adicionales se agregan `title_eng`, `title_prt`, `long_argument_prt` y `short_argument_prt`.
 - Para eventos deportivos se agrega `sportDetail` con `tournament`, `year`, `sport`, `stadium`, `round`, `team1`, `team2` y `statistics`.
 

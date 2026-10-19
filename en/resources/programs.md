@@ -82,6 +82,8 @@ GET /api/v1/rtv/processes/{processId}/latest/programs
 | Field | Type | Description |
 |---|---|---|
 | `id` | integer | Program identifier. |
+| `imdb_id` | string | IMDb identifier, when enabled and available. |
+| `imdb_rating` | number | IMDb rating, greater than 0 and up to 10, when enabled and available. |
 | `sport_event` | boolean | Whether this is a sports event. |
 | `main_title` | string | Main title. |
 | `original_title` | string | Original title. |
@@ -95,7 +97,7 @@ GET /api/v1/rtv/processes/{processId}/latest/programs
 | `images[].width` | integer | Width in pixels. |
 | `images[].height` | integer | Height in pixels. |
 | `images[].primary` | boolean | Whether this is primary. |
-| `images[].url` | string | Public URL. |
+| `images[].url` | string | Image reference for the agreed delivery method; see [image delivery](../API_CLIENTES.md). |
 | `images[].poster` | boolean | Whether the format is a poster. |
 | `keywords` | array of strings | Associated keywords. |
 | `related_programs` | array | Related programs. |
@@ -107,6 +109,7 @@ GET /api/v1/rtv/processes/{processId}/latest/programs
 
 ## Considerations
 
+- `imdb_id` and `imdb_rating` are optional and may be omitted independently depending on configuration and available data.
 - `poster` is included when that attribute is enabled for the process.
 - When additional languages are enabled, the following fields are added: `main_title_eng`, `main_title_prt`, `original_title_eng`, `original_title_prt`, `long_argument_prt` and `short_argument_prt`.
 

@@ -20,6 +20,10 @@ All resources use the same endpoint format:
 GET /api/v1/rtv/processes/{processId}/latest/{resource}
 ```
 
+All requests require the client API token in the
+`Authorization: Bearer TU_API_TOKEN` header. The [client guide](API_CLIENTES.md)
+includes a cURL example.
+
 Replace `{processId}` with the identifier assigned to your integration and
 `{resource}` with the data set you need. For example:
 
@@ -79,20 +83,3 @@ headers, and HTTP statuses.
 | [Teams](resources/teams.md) | Available sports teams. |
 | [Tournaments](resources/tournaments.md) | Tournaments and sports competitions. |
 | [Stadiums](resources/stadiums.md) | Stadiums and sports venues. |
-
-## Performance configuration
-
-For API administrators, the `Rtv` section lets you tune concurrency
-without recompiling:
-
-```json
-{
-  "ResourceParallelism": 2,
-  "WorkerParallelism": 4,
-  "CompressionLevel": "Optimal"
-}
-```
-
-- `ResourceParallelism` limits resources projected and published in parallel per generation.
-- `WorkerParallelism` limits concurrent generations. Generations for the same process run in order; different processes may run in parallel.
-- The product of both values cannot exceed 8. The defaults are 2 and 4.

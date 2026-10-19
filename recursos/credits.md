@@ -54,7 +54,7 @@ GET /api/v1/rtv/processes/{processId}/latest/credits
 | `images[].width` | entero | Ancho de la imagen en píxeles. |
 | `images[].height` | entero | Alto de la imagen en píxeles. |
 | `images[].primary` | booleano | Indica si es la imagen principal. |
-| `images[].url` | texto | URL pública de la imagen. |
+| `images[].url` | texto | Referencia de la imagen según la modalidad de entrega acordada; ver [entrega de imágenes](../API_CLIENTES.md). |
 
 ## Consideraciones
 
